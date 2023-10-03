@@ -1,0 +1,166 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	overflow: auto;
+	background-color: #FDE9D1;
+	font-family: 'Inter',sans-serif;
+}
+.nav{
+	display: flex;
+	align-items: center;
+	padding: auto;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 10px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.logo{
+	margin-top:20px;
+	margin-right: 100px;
+	height: auto;
+}
+.search-box{
+	margin-top: 30px;
+	height: 35px;
+	width:450px;
+	border-radius: 5px;
+	border-style: none;
+	margin-left: 240px;
+	margin-bottom: 20px;
+	margin-right: 70px;
+}
+.search-box::placeholder{
+	padding : 7px;
+	opacity: 70%;
+}
+.nav i{
+	font-size: 20px;
+	cursor: pointer;
+}
+.user{
+	max-width: 100px;
+	height: 30px;
+	background-color: #FDE9D1;
+	border-style: none;
+	word-spacing: 10px;
+	font-weight: 700;
+}
+.nav-2{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 10px;
+	color: #003B22;
+	margin-left: 40px;
+	margin-right: 40px;
+
+}
+.nav-2 ul{
+	list-style: none;
+	padding: 0;
+	display: flex;
+}
+.nav-2 li{
+	flex-direction: row;
+	margin-right: 50px;
+	font-weight: 700;
+}
+.nav-2:hover{
+	cursor: pointer;
+}
+.view-plans{
+	width: 170px;
+	height: 35px;
+	border-style: none;
+	border-radius: 15px;
+	margin-right: 20px;
+	color: white;
+	background-color: #FC8801;
+	cursor: pointer;
+	font-weight: 700;
+}
+.view-plans:hover{
+	color: #FC8801;
+	font-weight: 700;
+	background-color: #003B22;
+
+}
+.checkbtn{
+	font-size: 30px;
+	color: white;
+	float: right;
+	margin-right: 70px;
+	cursor: pointer;
+	display: none;
+}
+#check{
+	display: none;
+}
+.responsive-logo{
+	display: none;
+}
+
+/* Your existing CSS code */
+
+@media (max-width: 952px) {
+  .responsive-logo {
+    margin-top: 30px;
+    display: block;
+    margin-left: 20px;
+    font-size: 30px;
+  }
+
+  .checkbtn {
+    display: inline-block;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .nav img {
+    display: block;
+  }
+
+ .nav-2 ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-2 ul li {
+  	margin-top: 10px;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 858px) {
+    /*.checkbtn {
+      display: inline-block;
+      flex-direction: column;
+    }
+*/
+    .nav-2 ul {
+      width: 100%;
+    top: 80px;
+    left: -100%;
+    transition: all 0.5s;
+    text-align: center;
+    }
+
+    .nav-2 ul li {
+    	flex-direction: column;
+      margin-bottom: 10px;
+    }
+    /* Display in a column */
+
+
+     #check:checked + .nav-2 ul {
+      /*display: block; /* Show ul when the checkbox is checked */
+      left: 0;
+
+    }
+  }
+
+}
+

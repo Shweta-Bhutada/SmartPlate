@@ -1,0 +1,273 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	overflow: auto;
+	background-color: #FDE9D1;
+	font-family: 'Inter',sans-serif;
+}
+/*nav bar css*/
+.nav{
+	display: flex;
+	align-items: center;
+	padding: auto;
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 10px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.logo{
+	margin-top:20px;
+	margin-right: 100px;
+	height: auto;
+}
+.search-box{
+	margin-top: 30px;
+	height: 35px;
+	width:450px;
+	border-radius: 5px;
+	border-style: none;
+	margin-left: 240px;
+	margin-bottom: 20px;
+	margin-right: 70px;
+}
+.search-box::placeholder{
+	padding : 7px;
+	opacity: 70%;
+}
+.nav i{
+	font-size: 20px;
+	cursor: pointer;
+}
+.user{
+	max-width: 100px;
+	height: 30px;
+	background-color: #FDE9D1;
+	border-style: none;
+	word-spacing: 10px;
+	font-weight: 700;
+}
+.nav-2{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 10px;
+	color: #003B22;
+	margin-left: 40px;
+	margin-right: 40px;
+
+}
+.nav-2 ul{
+	list-style: none;
+	padding: 0;
+	display: flex;
+}
+.nav-2 li{
+	margin-right: 50px;
+	font-weight: 700;
+}
+.nav-2:hover{
+	cursor: pointer;
+}
+.view-plans{
+	width: 170px;
+	height: 35px;
+	border-style: none;
+	border-radius: 15px;
+	margin-right: 20px;
+	color: white;
+	background-color: #FC8801;
+	cursor: pointer;
+	font-weight: 700;
+}
+.view-plans:hover{
+	color: #FC8801;
+	font-weight: 700;
+	background-color: #003B22;
+
+}
+.border{
+	border-bottom: 2px solid black;
+	margin-top: 15px;
+	opacity: 30%;
+}
+/* green card */
+.flow-div{
+	display: flex;
+}
+.flow{
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: 20px;
+	font-family: 'Archivo Black',sans-serif;
+	opacity: 50%;
+}
+.table-desc{
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+.table-desc td{
+	padding: 7px;
+	border-right: 1px solid white;
+}
+.row2{
+	font-size: 12px;
+}
+.green-card {
+    display: flex;
+    /*align-items: center;*/
+    background-color: #003b22;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 20px;
+    height: 301px;
+    border-radius: 10px;
+}
+.main-img{
+	width: 430px;
+	height: 300px;
+	border-radius: 10px;
+}
+.card-items{
+	margin-left: 70px;
+	margin-top: 27px;
+	color:#FDE9D1;
+}
+.card-items p{
+	opacity: 50%;
+}
+.card-items span{
+	margin-top: 5px;
+}
+.card-items button{
+	float: right;
+	height: 40px;
+	width: 120px;
+	border-radius: 20px;
+	border-style: none;
+	background-color: #FC8801;
+	color: #FDE9D1;
+	font-weight: 700;
+	margin-top: 20px;
+}
+
+/*description*/
+.desc-container{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-column-gap: 10px;
+	margin-left: 60px;
+	margin-right: 60px;
+	margin-top: 40px;
+}
+.desc-item1{
+	width: 750px;
+}
+.desc-item1 p{
+	color: #232323;
+	font-weight: 600;
+	font-family: 'Inter',sans-serif;
+}
+.desc-item2 p{
+	color: #232323;
+	font-weight: 600;
+	font-family: 'Inter',sans-serif;
+	line-height: 30px;
+}
+.grid-container1{
+	display: grid;
+	grid-template-columns: auto auto;
+	column-gap: 10px;
+}
+/*ingredients and nutrition*/
+.ingredients-nutrition {
+    width: 700px;
+    flex-wrap: wrap; /* Allow ingredients to wrap to the next row if needed */
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 60px;
+    margin-right: 60px;
+    border-right: 2px solid gray;
+    margin-bottom: 20px;
+}
+
+.ingredient {
+    display: flex;
+    /*align-items: center; /* Vertically center the content within each ingredient */
+    /*width: calc(33.33% - 10px); /* Make each ingredient take up one-third of the container width with spacing */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+.circle-image {
+    width: 80px; /* Adjust the size of the circular image */
+    height: 80px; /* Adjust the size of the circular image */
+    border-radius: 50%; /* Make the container a circle */
+    overflow: hidden; /* Hide any image overflow */
+    margin-right: 30px; /* Add spacing between the image and details */
+}
+
+.circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain the aspect ratio and cover the circle */
+}
+
+.ingredient-details {
+    display: flex;
+    flex-direction: column; /* Stack the name and measurement in a column */
+    margin: 2px 0;
+}
+
+.ingredient-details h3{
+	margin-bottom: 20px;
+}
+.nutrition{
+	display: flex;
+	grid-template-columns: auto auto;
+	column-gap: 180px;
+	margin-right: 60px;
+}
+.nutrition ul{
+	list-style: none;
+}
+.nutrition li{
+	margin-bottom: 30px;
+}
+.instructions{
+	background-color: #F3F3F3;
+}
+.instructions h3{
+	margin-left: 60px;
+	margin-right: 60px;
+	padding-top: 40px;
+}
+.instructions-container{
+	margin-left: 60px;
+	margin-right: 60px;
+	margin-top: 40px;
+	display: grid;
+	grid-template-rows: auto auto auto auto auto auto;
+	row-gap: 20px;
+}
+.steps{
+	background-color: white;
+	align-content: center;
+}
+.step-img{
+	width: 420px;
+	height: 300px;
+	padding: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.step-p{
+	width:700px;
+	float: right;
+	margin-top: 100px;
+	margin-right: 10px;
+	padding-right: 20px;
+}
