@@ -15,6 +15,11 @@ body{
     box-sizing: border-box; /* Include padding and border in the element's total width */
 }
 
+.ingredient input[type="checkbox"] {
+    padding-right: 30px;
+    size:90px; /* Adjust spacing as needed */
+}
+
 .circle-image {
     width: 80px; /* Adjust the size of the circular image */
     height: 80px; /* Adjust the size of the circular image */
